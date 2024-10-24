@@ -47,8 +47,8 @@ body {
   padding-top: 64px;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  max-width: 1461px;
 }
 .container-nav {
   display: flex;
@@ -74,18 +74,30 @@ body {
   color: #fff;
   gap: 50px;
 }
+.header-form {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+  gap: 14px;
+}
 .div-flex {
   display: flex;
 }
-/* .hero {
-  display: flex;
-} */
+
 .divider {
   width: 72px;
   height: 2px;
   background-color: #ffc178;
 }
+.all-hero {
+  display: flex;
+  padding-top: 197px;
+}
 .div-text {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.div-divider {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -133,12 +145,9 @@ body {
   font-weight: 400;
   line-height: 100px;
   text-transform: capitalize;
+  margin-bottom: 125px;
 }
 
-.all-hero {
-  padding-top: 197px;
-  padding-left: 365px;
-}
 .span-name {
   display: flex;
   font-family: var(--font-family);
@@ -151,6 +160,7 @@ body {
 .scroll {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .scroll-down {
   /* display: inline-block;
@@ -161,15 +171,14 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding-top: 125px;
 }
 
 .follow {
   display: flex;
-  gap: 24px;
   writing-mode: vertical-rl;
   text-align: center;
   margin-left: 79px;
+  gap: 24px;
 }
 .navigation {
   color: #fff;
@@ -181,7 +190,20 @@ body {
 .icons-icons {
   fill: #f4f4fd;
 }
-
+.read-more {
+  color: var(--Accent, #fbd784);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.read-more-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 /* Main */
 .main {
   max-width: 1462px;
@@ -213,6 +235,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+  margin-bottom: 27px;
 }
 .title-logo {
   color: #fff;
@@ -276,6 +299,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+  margin-bottom: 39px;
 }
 
 /* section three */
@@ -321,16 +345,7 @@ body {
   line-height: 32px;
 }
 /* Footer */
-.footer {
-  display: flex;
-  width: 1461px;
-  flex-direction: column;
-  /* align-items: center; */
-}
-/* .footer-div {
-  display: flex;
-  justify-content: space-between;
-} */
+
 .footer-logo {
   color: var(--Wei, #fff);
   font-family: "Open Sans";
@@ -340,15 +355,13 @@ body {
   line-height: normal;
   letter-spacing: 0.48px;
   text-transform: capitalize;
-  margin-bottom: 104px;
 }
-/* .footer-question-div {
+.footer-question-div {
   display: flex;
-  width: 1460.86px;
-  height: 748px;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-} */
+  gap: 55px;
+}
 .footer-question {
   color: #fff;
   font-size: 22px;
@@ -373,14 +386,30 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.3px;
+  padding-bottom: 50px;
 }
 
 .footer-input {
-  width: 400px;
-  height: 60px;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #ffa343;
+  width: 340px;
+  height: 70px;
   flex-shrink: 0;
+  transition: border-color 0.3s ease;
+  padding-left: 9px;
 }
-
+.footer-input:hover,
+.footer-input:focus {
+  border-color: #ffa343;
+  outline: none;
+}
+.footer-button-input {
+  width: 69.136px;
+  height: 69.136px;
+  flex-shrink: 0;
+  background: #ffa343;
+}
 .footer-ul {
   display: inline-flex;
   padding: 34px 0px;
@@ -402,8 +431,16 @@ body {
   letter-spacing: -0.01em;
   color: #fff;
 }
+.footer-div-ul {
+  display: flex;
+  justify-content: end;
+  gap: 180px;
+}
+.footer-text-gap {
+  gap: 50px;
+}
 .footer-text {
-  width: 120px;
+  width: 170px;
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -420,4 +457,27 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+.footer-div-icons {
+  gap: 24px;
+}
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.border {
+  padding-bottom: 50px;
+  border-bottom: 2px solid #f4f4fd;
+}
+.pading {
+  padding-top: 45px;
+}
+.pading-botom {
+  padding-top: 104px;
+  padding-bottom: 160px;
 }
